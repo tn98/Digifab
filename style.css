@@ -2,20 +2,22 @@
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
 .item4 { grid-area: side; }
-.item5 { grid-area: footer; }
+.item5 { grid-area: low; }
+.item6 { grid-area: footer; }
+
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto 250px auto auto 5px;
+  grid-template-columns: auto 250px auto auto;
   grid-template-areas:
     'header header header header header header header'
     'menu menu menu main side side side'
+    'menu menu menu low low low low'
     'footer footer footer footer footer footer footer';
   gap: 1px;
   background-color: #FAF0E6;
   padding: 1px;
 }
-
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
